@@ -1,0 +1,49 @@
+{
+	"name": "routing",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"build": "react-router build",
+		"dev": "react-router dev",
+		"start": "react-router-serve ./build/server/index.js",
+		"typecheck": "react-router typegen && tsc",
+		"routes": "react-router routes"
+	},
+	"prisma": {
+		"seed": "tsx prisma/seed.ts"
+	},
+	"dependencies": {
+		"@conform-to/react": "^1.4.0",
+		"@conform-to/zod": "^1.4.0",
+		"@radix-ui/react-checkbox": "^1.2.3",
+		"@react-router/fs-routes": "^7.5.3",
+		"@react-router/node": "^7.5.0",
+		"@react-router/remix-routes-option-adapter": "^7.5.3",
+		"@react-router/serve": "^7.5.0",
+		"clsx": "^2.1.1",
+		"isbot": "^5.1.17",
+		"pdfkit": "^0.17.0",
+		"react": "^19.0.0",
+		"react-dom": "^19.0.0",
+		"react-router": "^7.5.0",
+		"remix-flat-routes": "^0.8.5",
+		"tailwind-merge": "^3.2.0",
+		"zod": "^3.24.3"
+	},
+	"devDependencies": {
+		"@prisma/client": "^6.7.0",
+		"@react-router/dev": "^7.5.0",
+		"@tailwindcss/vite": "^4.0.0",
+		"@types/node": "^20",
+		"@types/pdfkit": "^0.13.9",
+		"@types/react": "^19.0.1",
+		"@types/react-dom": "^19.0.1",
+		"prisma": "^6.7.0",
+		"react-router-devtools": "^1.1.0",
+		"tailwindcss": "^4.0.0",
+		"tsx": "^4.19.4",
+		"typescript": "^5.7.2",
+		"vite": "^5.4.11",
+		"vite-tsconfig-paths": "^5.1.4"
+	}
+}
